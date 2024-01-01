@@ -1,9 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage/HomePage";
-import AuthPage from "./pages/HomePage/AuthPage/AuthPage";
+import AuthPage from "./pages/AuthPage/AuthPage";
 import Pagelayout from "./Layouts/PageLayouts/Pagelayout";
-
-
 function App() {
   return (
     <Pagelayout>
