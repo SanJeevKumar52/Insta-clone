@@ -3,9 +3,10 @@ import HomePage from "./pages/HomePage/HomePage";
 import AuthPage from "./pages/AuthPage/AuthPage";
 import Pagelayout from "./Layouts/PageLayouts/Pagelayout";
 import ProfilePage from "./pages/ProfilePage/ProfilePage";
-import useAuthStore from "./store/authStore";
+import { auth } from "./firebase/firebase";
+import { useAuthState } from "react-firebase-hooks/auth";
 function App() {
-  const authUser = useAuthStore(state =>state.user);
+  const [authUser, loading] = useAuthState(auth)
   return (
     <Pagelayout>
       <Routes>

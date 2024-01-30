@@ -6,6 +6,7 @@ import {
   Alert,
   InputGroup,
   InputRightElement,
+  AlertIcon,
 } from "@chakra-ui/react";
 import useSignUpWithEmailAndPassword from "../../hooks/useSignUpWithEmailAndPassword";
 
