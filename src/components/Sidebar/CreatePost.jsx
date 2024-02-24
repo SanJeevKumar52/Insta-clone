@@ -32,7 +32,7 @@ const CreatePost = () => {
 export default CreatePost;
 
 // 2-COPY AND PASTE FOR THE MODAL
-{
+/* {
 	<Modal isOpen={isOpen} onClose={onClose} size='xl'>
 				<ModalOverlay />
 
@@ -55,4 +55,4 @@ export default CreatePost;
 					</ModalFooter>
 				</ModalContent>
 			</Modal>
-}
+} */
