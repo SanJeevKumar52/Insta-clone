@@ -2,9 +2,10 @@ import { Container, Flex, Link, Skeleton, SkeletonCircle, Text, VStack } from "@
 import ProfileHeader from "../../components/Profile/ProfileHeader";
 import ProfileTabs from "../../components/Profile/ProfileTabs";
 import ProfilePosts from "../../components/Profile/ProfilePosts";
-import useGetUserProfileByUserName from "../../hooks/useGetUserProfileByUserName";
+import useGetUserProfileByUserName from "../../hooks/useGetUserProfileByUsername";
 import { useParams } from "react-router-dom";
 import { Link as RouterLink } from "react-router-dom";
+
 const ProfilePage = () => {
 	const { username } = useParams();
 	const { isLoading, userProfile } = useGetUserProfileByUserName(username);
